@@ -65,7 +65,32 @@ let bouge = setInterval(deplacer, 5);
 
 document.addEventListener('keydown', function(event) {
     if (event.key === 'a' || event.key === 'A') {
-        console.log("La touche 'A' a été pressée");
+        console.log("Lancer la fonction poussée");
     }
 });
+
+function pousser(){
+  for(let i=0; i<listDechet.length; i++) {
+    var verif = document.getElementById('dechet' + i)
+
+    if (verif.getClass = "verre"){
+      if(verif.style.left = 400 +"px"){
+        console.log("trié");
+      } else { console.log("non trié"); }
+    } else { 
+      if(verif.getClass = "bouteille"){
+        if(verif.style.left = 400 +"px"){
+          console.log("trié");
+        } else { console.log("non trié"); }
+      } else {
+        if(verif.getClass = "sac"){
+          if(verif.style.left = 800 +"px"){
+            console.log("trié");
+          } else { console.log("non trié"); }
+      }
+    }
+  }
+}}
+
+
 
